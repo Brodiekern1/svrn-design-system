@@ -1,0 +1,85 @@
+/* SVRN Design System — CSS Tokens
+ * Source of truth: brand-onepager.html
+ * Import in any project: @import url("path/to/tokens.css");
+ */
+
+:root {
+  /* ─────────── Surfaces ─────────── */
+  --svrn-bg:            #1F1F1F;   /* Base canvas */
+  --svrn-bg-elevated:   #2A2A2A;   /* Cards, modals, sidebar-active */
+  --svrn-bg-subtle:     #353535;   /* Hover states, inset chips */
+  --svrn-bg-inset:      #171717;   /* Below-base, deepest well */
+
+  /* ─────────── Borders ─────────── */
+  --svrn-border:         #3A3A3A;   /* Default divider */
+  --svrn-border-subtle:  #2F2F2F;   /* Quiet divider */
+  --svrn-border-strong:  #454545;   /* Emphasized edge */
+
+  /* ─────────── Foreground ─────────── */
+  --svrn-fg:            #ECE5CB;              /* Cream — display/hero */
+  --svrn-fg-white:      rgba(255, 255, 255, 0.95);   /* Body default */
+  --svrn-fg-muted:      rgba(255, 255, 255, 0.75);   /* Secondary text */
+  --svrn-fg-subtle:     rgba(255, 255, 255, 0.55);   /* Meta, captions */
+  --svrn-fg-faint:      rgba(255, 255, 255, 0.40);   /* Section indexes */
+  --svrn-fg-quiet:      rgba(255, 255, 255, 0.25);   /* Disabled, deep bg */
+
+  /* ─────────── Accent — Maroon ─────────── */
+  --svrn-accent:         #671F1F;    /* Primary maroon */
+  --svrn-accent-bright:  #943838;    /* Bright maroon — emphasis, links */
+  --svrn-accent-hover:   #7A2828;    /* Hover between the two */
+  --svrn-accent-fill:    rgba(103, 31, 31, 0.15);   /* Transparent maroon wash */
+
+  /* ─────────── Shadows ─────────── */
+  --svrn-shadow-card:    0 4px 20px -4px rgba(0, 0, 0, 0.50),
+                         0 1px 4px -1px rgba(0, 0, 0, 0.30);
+  --svrn-shadow-hover:   0 8px 32px -6px rgba(0, 0, 0, 0.60),
+                         0 2px 6px -2px rgba(0, 0, 0, 0.35);
+  --svrn-shadow-inset:   inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+  /* Typographic shadow — apply to all Fraunces display headings */
+  --svrn-display-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+  /* ─────────── Radii ─────────── */
+  --svrn-radius-sm:  4px;    /* Chips, tags, small pills */
+  --svrn-radius-md:  6px;    /* Buttons, inputs */
+  --svrn-radius-lg:  8px;    /* Cards (default) */
+  --svrn-radius-xl:  12px;   /* Modals, large containers */
+
+  /* ─────────── Motion ─────────── */
+  --svrn-ease:         150ms ease;       /* Default micro-interaction */
+  --svrn-ease-page:    300ms ease-out;   /* Page/section enter */
+  --svrn-ease-macro:   600ms ease-in-out;/* Cinematic / rare */
+
+  /* ─────────── Type families ─────────── */
+  --svrn-font-display: 'Fraunces', Georgia, serif;
+  --svrn-font-sans:    'Inter', system-ui, -apple-system, sans-serif;
+  --svrn-font-mono:    'JetBrains Mono', 'SF Mono', Monaco, monospace;
+
+  /* ─────────── Type weights ─────────── */
+  --svrn-weight-display:   400;    /* Fraunces default for headings */
+  --svrn-weight-body:      400;
+  --svrn-weight-medium:    500;
+  --svrn-weight-strong:    600;
+
+  /* ─────────── Type scale ─────────── */
+  --svrn-size-hero:      clamp(56px, 7vw, 84px);    /* Masthead only */
+  --svrn-size-section:   clamp(36px, 4vw, 44px);    /* Section titles */
+  --svrn-size-page:      clamp(28px, 3vw, 36px);    /* Page/card titles */
+  --svrn-size-lead:      16px;                      /* Section leads */
+  --svrn-size-body:      14px;                      /* Default body */
+  --svrn-size-meta:      13px;                      /* Secondary */
+  --svrn-size-kicker:    11px;                      /* Uppercase mono label */
+
+  /* ─────────── Letter-spacing ─────────── */
+  --svrn-track-display: -0.025em;   /* Fraunces, tight */
+  --svrn-track-body:    -0.005em;   /* Inter, near-neutral */
+  --svrn-track-kicker:   0.18em;    /* Mono uppercase labels */
+}
+
+/* ─────────── Utility classes ─────────── */
+
+/* Apply to every Fraunces display heading for the "planted" tactical feel. */
+.svrn-display-shadow { text-shadow: var(--svrn-display-shadow); }
+
+/* Terminal period — type signature. Use sparingly (sections, page titles). */
+.svrn-terminal-period::after { content: "."; }
