@@ -2,7 +2,9 @@
 
 Source of truth for the **Sovereign Operators / SVRN** brand.
 
-Deployed one-pager: _(set after Vercel deploy)_
+Deployed one-pager: [svrn-design-system-oxk1ot0m5-brodiekern1s-projects.vercel.app](https://svrn-design-system-oxk1ot0m5-brodiekern1s-projects.vercel.app)
+
+> Note: repo is private and Vercel deployment protection is on. The URL returns 401 to non-logged-in visitors. To share publicly, either make the repo public or disable deployment protection in Vercel → Project Settings → Deployment Protection.
 
 ## What's in here
 
