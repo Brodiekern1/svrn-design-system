@@ -1,12 +1,12 @@
 # SVRN Design System
 
-Source of truth for SVRN brand tokens, logos, and the `@svrn/design-system` npm package consumed by `svrn-admin-platform` and `svrn-operator-platform`.
+Source of truth for SVRN brand tokens, logos, and the `@svrn/design-system` npm package consumed by `svrn-admin` and `svrn-command-center`.
 
 ## Canonical surfaces
 - **Repo:** `Brodiekern1/svrn-design-system`
 - **Live URL:** https://svrn-design-system.vercel.app (one-pager preview)
 - **Canonical branch:** `main`
-- **Consumed by:** `svrn-admin-platform` and `svrn-operator-platform` via `"@svrn/design-system": "github:Brodiekern1/svrn-design-system"` — no npm publish.
+- **Consumed by:** `svrn-admin` and `svrn-command-center` via `"@svrn/design-system": "github:Brodiekern1/svrn-design-system"` — no npm publish.
 
 ## What lives here
 - Brand one-pager (tactical brutalism × luxury editorial, maroon/cream/black palette)

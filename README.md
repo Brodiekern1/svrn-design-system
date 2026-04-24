@@ -53,4 +53,4 @@ Point the agent at `brand.md` or `tokens.json`. Both are self-contained.
 ## Related repos
 
 - Operator dashboard: `svrn-command-center`
-- Admin dashboard: `tso-admin`
+- Admin dashboard: `svrn-admin`
