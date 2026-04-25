@@ -22,3 +22,9 @@ Distribution repo for the `@svrn/design-system` npm package consumed by `svrn-ad
 - **Brand changes start at the one-pager, never here.** Editing tokens or Button.tsx without first updating the one-pager creates drift. Workflow is always: one-pager → tokens → consumers.
 - Palette: maroon (oxblood), cream, black. Hex values must match the brand one-pager.
 - Bumping this repo affects both platforms — run a build of each after a breaking change.
+- **Consumer lockfiles pin commit hashes.** After pushing changes here, `svrn-command-center` and `svrn-admin` will keep installing the OLD commit on every Vercel deploy until their `package-lock.json` is updated. To pick up changes, run in each consumer:
+  ```
+  npm install @svrn/design-system@github:Brodiekern1/svrn-design-system
+  git add package-lock.json && git commit -m "deps: bump @svrn/design-system" && git push
+  ```
+  Skipping this step is silent — Vercel deploy succeeds but serves stale design-system code. Always verify a consumer's lockfile resolves to the latest commit (`grep "Brodiekern1/svrn-design-system" package-lock.json`).
