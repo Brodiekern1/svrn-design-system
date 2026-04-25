@@ -1,6 +1,6 @@
 {
   "name": "@svrn/design-system",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "SVRN Design System — shared components, tokens, and brand assets for Sovereign Operators dashboards.",
   "main": "./src/index.ts",
   "types": "./src/index.ts",

@@ -24,9 +24,12 @@
   --svrn-fg-quiet:      rgba(255, 255, 255, 0.25);   /* Disabled, deep bg */
 
   /* ─────────── Accent — Maroon ─────────── */
-  --svrn-accent:         #671F1F;    /* Primary maroon */
-  --svrn-accent-bright:  #D85050;    /* Bright maroon — emphasis, links */
-  --svrn-accent-hover:   #7A2828;    /* Hover between the two */
+  --svrn-accent:         #671F1F;    /* Primary maroon — legacy fills */
+  --svrn-accent-bright:  #943838;    /* Brick — text, labels, dashes, button border */
+  --svrn-accent-hover:   #7A2828;    /* Hover between the two — also rail/dot solid */
+  --svrn-accent-deep:    #541818;    /* Gradient bottom stop */
+  --svrn-accent-status:  #7A2828;    /* Standalone status / notification dots */
+  --svrn-accent-gradient: linear-gradient(180deg, #7A2828 0%, #541818 100%); /* Buttons + active sidebar rail */
   --svrn-accent-fill:    rgba(103, 31, 31, 0.15);   /* Transparent maroon wash */
 
   /* ─────────── Shadows ─────────── */
