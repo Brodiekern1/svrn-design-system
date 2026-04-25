@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Button variations — DELETE BEFORE COMMIT</title>
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body { background: #1F1F1F; color: #ECE5CB; font-family: 'Inter', sans-serif; padding: 48px 56px; margin: 0; }
+  h1 { font-size: 14px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin: 0 0 32px 0; }
+  .row { display: grid; grid-template-columns: 220px 380px 1fr; gap: 24px; align-items: center; padding: 18px 0; border-bottom: 1px solid #2A2A2A; }
+  .label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
+  .recipe { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.4); line-height: 1.55; }
+  .btn-cell { display: flex; justify-content: flex-start; }
+  /* Each button is sized like the SIGN IN button so we can read it the same way */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-width: 360px; padding: 14px 28px; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; cursor: pointer; transition: all 150ms ease; }
+  .arrow { display: inline-block; width: 14px; height: 14px; border-right: 1.5px solid currentColor; border-top: 1.5px solid currentColor; transform: rotate(45deg) translate(-2px, 2px); }
+</style></head>
+<body>
+<h1>Sign-In Button Variations · same scale as live login page</h1>
+
+<div class="row">
+  <div class="label">A · Current (live)</div>
+  <div class="recipe">bg: #671F1F<br>border: 1px #D85050<br>text: cream</div>
+  <div class="btn-cell">
+    <span class="btn" style="background:#671F1F; border:1px solid #D85050; color:#ECE5CB;">Sign In <span class="arrow"></span></span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="label">B · Deep + brick border</div>
+  <div class="recipe">bg: #671F1F<br>border: 1px #943838<br>text: cream<br><span style="color:#D85050">(original brand one-pager recipe)</span></div>
+  <div class="btn-cell">
+    <span class="btn" style="background:#671F1F; border:1px solid #943838; color:#ECE5CB;">Sign In <span class="arrow"></span></span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="label">C · Deep + cream hairline</div>
+  <div class="recipe">bg: #671F1F<br>border: 1px rgba(236,229,203,0.25)<br>text: cream<br><span style="color:#D85050">(luxury editorial feel)</span></div>
+  <div class="btn-cell">
+    <span class="btn" style="background:#671F1F; border:1px solid rgba(236,229,203,0.25); color:#ECE5CB;">Sign In <span class="arrow"></span></span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="label">D · Deep, no border</div>
+  <div class="recipe">bg: #671F1F<br>border: none<br>text: cream</div>
+  <div class="btn-cell">
+    <span class="btn" style="background:#671F1F; color:#ECE5CB;">Sign In <span class="arrow"></span></span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="label">E · Hover-fill, no border</div>
+  <div class="recipe">bg: #7A2828<br>border: none<br>text: cream<br><span style="color:#D85050">(slightly punchier flat fill)</span></div>
+  <div class="btn-cell">
+    <span class="btn" style="background:#7A2828; color:#ECE5CB;">Sign In <span class="arrow"></span></span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="label">F · Brick fill, no border</div>
+  <div class="recipe">bg: #943838<br>border: none<br>text: cream<br><span style="color:#D85050">(old canonical bright as fill)</span></div>
+  <div class="btn-cell">
+    <span class="btn" style="background:#943838; color:#ECE5CB;">Sign In <span class="arrow"></span></span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="label">G · Cream pill (inverse)</div>
+  <div class="recipe">bg: #ECE5CB<br>border: none<br>text: deep maroon</div>
+  <div class="btn-cell">
+    <span class="btn" style="background:#ECE5CB; color:#671F1F;">Sign In <span class="arrow"></span></span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="label">H · Outline only (ghost)</div>
+  <div class="recipe">bg: transparent<br>border: 1px #943838<br>text: cream</div>
+  <div class="btn-cell">
+    <span class="btn" style="background:transparent; border:1px solid #943838; color:#ECE5CB;">Sign In <span class="arrow"></span></span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="label">I · Vertical gradient + brick edge</div>
+  <div class="recipe">bg: linear-gradient(180deg, #7A2828 0%, #541818 100%)<br>border: 1px #943838<br>text: cream</div>
+  <div class="btn-cell">
+    <span class="btn" style="background:linear-gradient(180deg,#7A2828 0%,#541818 100%); border:1px solid #943838; color:#ECE5CB;">Sign In <span class="arrow"></span></span>
+  </div>
+</div>
+
+<p style="margin-top: 40px; color: rgba(255,255,255,0.5); font-size: 13px; max-width: 720px; line-height: 1.6;">
+Once you call a winner, I lock that recipe into the brand-onepager (canonical) → svrn-design-system Button.tsx → cascade across both dashboards. Same workflow as before.
+</p>
+</body></html>
