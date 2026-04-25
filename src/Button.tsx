@@ -20,7 +20,9 @@ const sizes: Record<ButtonSize, string> = {
 };
 
 const variants: Record<ButtonVariant, string> = {
-  primary: "bg-[#671F1F] text-white hover:bg-[#7A2828]",
+  // Canonical SVRN button — mirrors the brand-onepager .btn recipe
+  // (deep maroon fill + bright maroon outline + cream text + hover toward bright)
+  primary: "bg-[#671F1F] text-[#ECE5CB] border border-[#D85050] hover:bg-[#7A2828]",
   secondary: "bg-[#353535] text-white/85 hover:bg-[#454545] hover:text-white",
   ghost: "bg-transparent text-white border border-[#3A3A3A] hover:border-white/25",
   danger: "bg-transparent text-[#C44040] border border-[#C44040]/35 hover:bg-[#C44040]/10",
