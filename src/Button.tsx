@@ -11,7 +11,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const base =
-  "inline-flex items-center justify-center font-semibold uppercase tracking-[0.22em] transition-colors rounded-lg disabled:opacity-40 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-[#943838]/40 focus:ring-offset-2 focus:ring-offset-[#1F1F1F]";
+  "inline-flex items-center justify-center font-semibold uppercase tracking-[0.22em] transition-colors rounded-lg disabled:opacity-40 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-[#D85050]/40 focus:ring-offset-2 focus:ring-offset-[#1F1F1F]";
 
 const sizes: Record<ButtonSize, string> = {
   sm: "px-[14px] py-2 text-[11px]",

@@ -23,7 +23,7 @@ Read as: a magazine laid out by an ex-military operator, not a SaaS dashboard.
 | Inset (deepest) | `--svrn-bg-inset` | `#171717` |
 | Cream (display / hero) | `--svrn-fg` | `#ECE5CB` |
 | Maroon (primary accent) | `--svrn-accent` | `#671F1F` |
-| Bright maroon (emphasis) | `--svrn-accent-bright` | `#943838` |
+| Bright maroon (emphasis) | `--svrn-accent-bright` | `#D85050` |
 
 Cream is the editorial note. Use for masthead, hero, identity. **Do not** use cream for body copy — body copy is 95% white.
 

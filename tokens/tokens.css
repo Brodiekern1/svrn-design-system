@@ -25,7 +25,7 @@
 
   /* ─────────── Accent — Maroon ─────────── */
   --svrn-accent:         #671F1F;    /* Primary maroon */
-  --svrn-accent-bright:  #943838;    /* Bright maroon — emphasis, links */
+  --svrn-accent-bright:  #D85050;    /* Bright maroon — emphasis, links */
   --svrn-accent-hover:   #7A2828;    /* Hover between the two */
   --svrn-accent-fill:    rgba(103, 31, 31, 0.15);   /* Transparent maroon wash */
 
